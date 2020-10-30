@@ -1,0 +1,528 @@
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+   <!-- Mirrored from www.w3schools.com/html/html_basic.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 08:48:19 GMT -->
+   <head>
+      <title>HTML Basic</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,ASP,XML,DOM,Bootstrap,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,source code,colors,demos,tips">
+      <meta name="Description" content="Well organized and easy to understand Web bulding tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, and XML.">
+      <link rel="icon" href="../favicon.ico" type="image/x-icon">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" type="text/css" href="theme.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   </head>
+
+   <body>
+      <!-- 1 -->
+      <div class='rd-container top'>
+         <!-- <a class='w3schools-logo' href='#'>w3schools<span class='dotcom'>.com</span></a> -->
+         <a class='w3schools-logo' href='#' style="color:blue">Easy Learn</a>
+         <div class='rd-right toptext rd-wide'>
+           <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="width: 384px;">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+      </div>
+
+      <!-- 2 second nav -->
+      <div class='rd-topnav rd-card-2 rd-slim topnav' id='topnav'>
+         <div >
+            <div style='width:100%;overflow:hidden;height:44px'>
+               <a style='float:left' href='javascript:void(0);' class='topnav-localicons rd-hide-large rd-left' onclick='open_menu()' title='Menu'>&#9776;</a>
+               <a href='#' class='btn btn-outline-darkl'>Botany</a>
+               <a href='#' class='rd-hide-small'>Zoology</a>
+               <a href='#' class='rd-hide-small'>Physics</a>
+               <a href='#' class='rd-hide-small'>Chemistry</a>
+               <a href='#' class='rd-hide-small'>Maths</a>
+               <a href='#' class='rd-hide-small'>Computer Science</a>
+               <a href='#' class='rd-hide-small'>Computer Application</a>
+            </div>
+         </div>
+
+         <div id='nav_tutorials' class='rd-dropnav rd-light-grey rd-card-2 rd-center'></div>
+         <div id='nav_references' class='rd-dropnav rd-light-grey rd-card-2 rd-center'></div>
+         <div id='nav_examples' class='rd-dropnav rd-light-grey rd-card-2 rd-center'></div>
+         <div id='nav_translate' class='rd-dropnav rd-light-grey rd-card-2 rd-center'></div>
+         <div id='nav_search' class='rd-dropnav rd-light-grey rd-card-2 rd-center'></div>
+      </div>
+
+<!-- 3 Left side menu -->
+<div class='rd-row rd-light-grey' id='belowtopnav'>
+   <div class='rd-col rd-slim' id='leftmenu'>
+      <div id='leftmenuinner'>
+         <div class='rd-light-grey' id='leftmenuinnerinner'>
+            <a href='javascript:void(0)' onclick='close_menu()' class='rd-closebtn rd-hide-large rd-large' style='padding:3px 12px;'>&times;</a>
+            <h2 class="left"><span class="left_h2">Plus One</span></h2>
+              <a target="_top" href="#">+1 Computer Science</a>
+              <a target="_top" href="#">+1 Computer Application</a>
+              <a target="_top" href="#">+1 Botany</a>
+              <a target="_top" href="#">+1 Zoology</a>
+              <a target="_top" href="#">+1 Physics</a>
+              <a target="_top" href="#">+1 Chemistry</a>
+              <a target="_top" href="#">+1 Maths</a>
+            <br>
+            <h2 class="left"><span class="left_h2">Plus Two</span></h2>
+              <a target="_top" href="#">+2 Computer Science</a>
+              <a target="_top" href="#">+2 Computer Application</a>
+              <a target="_top" href="#">+2 Botany</a>
+              <a target="_top" href="#">+2 Zoology</a>
+              <a target="_top" href="#">+2 Physics</a>
+              <a target="_top" href="#">+2 Chemistry</a>
+              <a target="_top" href="#">+2 Maths</a>
+            <br>
+            <h2 class="left"><span class="left_h2">Python</span></h2>
+              <a target="_top" href="html5_canvas.html">Python Basic</a>
+              <a target="_top" href="html5_svg.html">Python Advance</a>
+            <br>
+            <h2 class="left"><span class="left_h2">HTML</span> Media</h2>
+            <a target="_top" href="html_media.html">HTML Media</a>
+            <a target="_top" href="html5_video.html">HTML Video</a>
+            <a target="_top" href="html5_audio.html">HTML Audio</a>
+            <a target="_top" href="html_object.html">HTML Plug-ins</a>
+            <a target="_top" href="html_youtube.html">HTML YouTube</a>
+            <br>
+            <h2 class="left"><span class="left_h2">HTML</span> APIs</h2>
+            <a target="_top" href="html5_geolocation.html">HTML Geolocation</a>
+            <a target="_top" href="html5_draganddrop.html">HTML Drag/Drop</a>
+            <a target="_top" href="html5_webstorage.html">HTML Local Storage</a>
+            <a target="_top" href="html5_app_cache.html">HTML App Cache</a>
+            <a target="_top" href="html5_webworkers.html">HTML Web Workers</a>
+            <a target="_top" href="html5_serversentevents.html">HTML SSE</a>
+            <br>
+            <h2 class="left"><span class="left_h2">HTML</span> Examples</h2>
+            <a target="_top" href="html_examples.html">HTML Examples</a>
+            <a target="_top" href="html_quiz.html">HTML Quiz</a>
+            <a target="_top" href="html5_quiz.html">HTML5 Quiz</a>
+            <a target="_top" href="html_exam.html">HTML Certificate</a>
+            <a target="_top" href="html5_exam.html">HTML5 Certificate</a>
+            <a target="_top" href="html_summary.html">HTML Summary</a>
+            <br>
+            <h2 class="left"><span class="left_h2">HTML</span> References</h2>
+            <a target="_top" href="../tags/default.html">HTML Tag List</a>
+            <a target="_top" href="../tags/ref_standardattributes.html">HTML Attributes</a>
+            <a target="_top" href="../tags/ref_eventattributes.html">HTML Events</a>
+            <a target="_top" href="../tags/ref_canvas.html">HTML Canvas</a>
+            <a target="_top" href="../tags/ref_av_dom.html">HTML Audio/Video</a>
+            <a target="_top" href="../tags/ref_html_dtd.html">HTML Doctypes</a>
+            <a target="_top" href="../colors/default.html">HTML Colors</a>
+            <a target="_top" href="../charsets/default.html">HTML Character Sets</a>
+            <a target="_top" href="../tags/ref_urlencode.html">HTML URL Encode</a>
+            <a target="_top" href="../tags/ref_language_codes.html">HTML Lang Codes</a>
+            <a target="_top" href="../tags/ref_httpmessages.html">HTTP Messages</a>
+            <a target="_top" href="../tags/ref_httpmethods.asp">HTTP Methods</a>
+            <a target="_top" href="../tags/ref_pxtoemconversion.html">PX to EM Converter</a>
+            <a target="_top" href="../tags/ref_keyboardshortcuts.html">Keyboard Shortcuts</a><br><br>
+         </div>
+      </div>
+      &nbsp;
+   </div>
+
+
+
+         <div class='rd-rest'>
+            <div class='rd-row rd-white'>
+              <!-- Note section -->
+               <div class='rd-col l12 m12' id='main'>
+
+
+
+                  <!-- =========================== -->
+                  <div class="row">
+                    <div class='rd-col l12 m12'>
+                        <div>
+                           <div>
+                              <h1 align="center" >+1 Computer Science </h1>
+                           </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+<!-- ===================================================================================== -->
+<style>
+  .hd{
+    background: #464854;
+  margin-bottom: 0;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 3px 3px 0 0;
+  color: white;
+}
+  }
+  .list-group a:link {
+  text-decoration: none;
+}
+
+.card a:link{
+  text-decoration: none;
+}
+
+
+</style>
+
+
+
+   <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="ch_1 ch_2">Show All</button>
+                  <div class="row">
+      <!-- Chapter 1 -->
+                        <div class='rd-col l6 m12' style="padding:10px">
+                          <div class="accordion" id="chap_1">
+                            <div class="card">
+                              <a href="#" class="hd" data-toggle="collapse" data-target="#ch_1" aria-expanded="false" aria-controls="ch_1">
+                                <span style="color:#ffffff">
+                                  Collapsible Group Item #1</span> </a>
+                              <div id="ch_1" class="collapse multi-collapse" aria-labelledby="headingOne" data-parent="#chap_1">
+                                <div class="card-body">
+                                  <ul class="list-group">
+                                      <a href="#"><li class="list-group-item border-right-0 border-left-0  border-top-0">One</li></a>
+                                      <a href="#"><li class="list-group-item border-right-0 border-left-0  border-top-0">One</li></a>
+                                      <a href="#"><li class="list-group-item border-right-0 border-left-0  border-top-0">One</li></a>
+                                      <a href="#"><li class="list-group-item border-right-0 border-left-0  border-top-0">One</li></a>
+                                  <ul/>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+      <!-- /Chapter 1 -->
+
+      <!-- Chapter 2 -->
+                        <div class='rd-col l6 m12' style="padding:10px">
+                          <div class="accordion" id="chap_2">
+                            <div class="card">
+                              <a href="#" class="hd" data-toggle="collapse" data-target="#ch_2" aria-expanded="false" aria-controls="ch_2">
+                                <span style="color:#ffffff">Collapsible Group Item #2</span> </a>
+                              <div id="ch_2" class="collapse multi-collapse" aria-labelledby="headingOne" data-parent="#chap_2">
+                                <div class="card-body">
+                                  <ul class="list-group">
+                                      <a href="#"><li class="list-group-item border-right-0 border-left-0  border-top-0">One</li></a>
+                                      <a href="#"><li class="list-group-item border-right-0 border-left-0  border-top-0">One</li></a>
+                                      <a href="#"><li class="list-group-item border-right-0 border-left-0  border-top-0">One</li></a>
+                                      <a href="#"><li class="list-group-item border-right-0 border-left-0  border-top-0">One</li></a>
+                                  <ul/>
+                                </div>
+                              </div>
+                            </div>
+                            </div>
+                        </div>
+      <!-- /Chapter 2 -->
+
+      <!-- Chapter 3 -->
+                        <div class='rd-col l6 m12' style="padding:10px">
+                          <div class="accordion" id="chap_3">
+                            <div class="card">
+                              <a href="#" class="hd" data-toggle="collapse" data-target="#ch_3" aria-expanded="false" aria-controls="ch_3">
+                                <span style="color:#ffffff">Collapsible Group Item #2</span> </a>
+                              <div id="ch_3" class="collapse multi-collapse" aria-labelledby="headingOne" data-parent="#chap_3">
+                                <div class="card-body">
+                                  <ul class="list-group">
+                                      <a href="#"><li class="list-group-item border-right-0 border-left-0  border-top-0">One</li></a>
+                                      <a href="#"><li class="list-group-item border-right-0 border-left-0  border-top-0">One</li></a>
+                                      <a href="#"><li class="list-group-item border-right-0 border-left-0  border-top-0">One</li></a>
+                                      <a href="#"><li class="list-group-item border-right-0 border-left-0  border-top-0">One</li></a>
+                                  <ul/>
+                                </div>
+                              </div>
+                            </div>
+                            </div>
+                        </div>
+      <!-- /Chapter 3 -->
+
+      <!-- Chapter 4 -->
+                        <div class='rd-col l6 m12' style="padding:10px">
+                          <div class="accordion" id="chap_4">
+                            <div class="card">
+                              <a href="#" class="hd" data-toggle="collapse" data-target="#ch_4" aria-expanded="false" aria-controls="ch_4">
+                                <span style="color:#ffffff">Collapsible Group Item #2</span> </a>
+                              <div id="ch_4" class="collapse multi-collapse" aria-labelledby="headingOne" data-parent="#chap_4">
+                                <div class="card-body">
+                                  <ul class="list-group">
+                                      <a href="#"><li class="list-group-item border-right-0 border-left-0  border-top-0">One</li></a>
+                                      <a href="#"><li class="list-group-item border-right-0 border-left-0  border-top-0">One</li></a>
+                                      <a href="#"><li class="list-group-item border-right-0 border-left-0  border-top-0">One</li></a>
+                                      <a href="#"><li class="list-group-item border-right-0 border-left-0  border-top-0">One</li></a>
+                                  <ul/>
+                                </div>
+                              </div>
+                            </div>
+                            </div>
+                        </div>
+      <!-- /Chapter 4 -->
+
+              </div>
+
+
+
+
+
+<!-- ===================================================================================== -->
+
+
+
+                  </div>
+
+                  <!-- ========================== -->
+
+
+                  <div class="chapter">
+                     <div class="prev"><a class="chapter" href="html_editors.html">&laquo; Previous</a></div>
+                     <div class="next"><a class="chapter" href="html_elements.html">Next Chapter &raquo;</a></div>
+                  </div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+            <!-- footer section -->
+            <div class="footer rd-container rd-white">
+               <div class="rd-container rd-light-grey rd-padding" id="err_sent" style="display:none;">
+                  <span onclick="this.parentElement.style.display='none'" class="rd-closebtn">&times;</span>
+                  <h2>Thank You For Helping Us!</h2>
+                  <p>Your message has been sent to W3Schools.</p>
+               </div>
+               <div class="rd-row rd-center rd-small">
+                  <div class="rd-col l3 m6 s12">
+                     <div class="top10">
+                        <h4>Top 10 Tutorials</h4>
+                        <a href="default.html">HTML Tutorial</a><br>
+                        <a href="../css/default.html">CSS Tutorial</a><br>
+                        <a href="../js/default.html">JavaScript Tutorial</a><br>
+                        <a href="../w3css/default.html">W3.CSS Tutorial</a><br>
+                     </div>
+                  </div>
+                  <div class="rd-col l3 m6 s12">
+                     <div class="top10">
+                        <h4>Top 10 References</h4>
+                        <a href="../tags/default.html">HTML Reference</a><br>
+                        <a href="../cssref/default.html">CSS Reference</a><br>
+                        <a href="../jsref/default.html">JavaScript Reference</a><br>
+                        <a href="../w3css/w3css_references.html">W3.CSS Reference</a><br>
+                     </div>
+                  </div>
+                  <div class="rd-col l3 m6 s12">
+                     <div class="top10">
+                        <h4>Top 10 Examples</h4>
+                        <a href="html_examples.html">HTML Examples</a><br>
+                        <a href="../css/css_examples.html">CSS Examples</a><br>
+                        <a href="../js/js_examples.html">JavaScript Examples</a><br>
+                        <a href="../w3css/w3css_examples.html">W3.CSS Examples</a><br>
+                      </div>
+                  </div>
+                  <div class="rd-col l3 m6 s12">
+                     <div class="top10">
+                        <h4>Web Certificates</h4>
+                        <a href="../cert/default.html">HTML Certificate</a><br>
+                        <a href="../cert/default.html">HTML5 Certificate</a><br>
+                        <a href="../cert/default.html">CSS Certificate</a><br>
+                        <a href="../cert/default.html">JavaScript Certificate</a><br>
+                    </div>
+                  </div>
+               </div>
+               <hr>
+               <div class="rd-center rd-small rd-opacity">
+                  W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding.
+                  Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content.
+                  While using this site, you agree to have read and accepted our <a href="../about/about_copyright.html">terms of use</a>,
+                  <a href="../about/about_privacy.html">cookie and privacy policy</a>.
+                  <a href="../about/about_copyright.html">Copyright 1999-2016</a> by Refsnes Data. All Rights Reserved.<br><br>
+                  <a href="../index.html">
+                  <img style="width:150px;height:28px;border:0" src="#" alt="Easy Learn"></a>
+               </div>
+               <br><br>
+            </div>
+            <!-- end footer section -->
+         </div>
+      </div>
+
+<!-- ================================================ end of page =====================================================================-->
+
+      <!-- calling function -->
+      <div id="nav_tutorials_content" style="display:none;">
+         <span onclick='w3_close_nav("tutorials")' class='rd-closebtn rd-xlarge'>&times;</span>
+         <div class='rd-row-padding'>
+            <div class='rd-col l2 m4'>
+               <h3>HTML/CSS</h3>
+               <a href='default.html'>Learn HTML</a>
+               <a href='../css/default.html'>Learn CSS</a>
+               <a href='../w3css/default.html'>Learn W3.CSS</a>
+               <a href='../colors/default.html'>Learn Colors</a>
+               <a href='../bootstrap/default.html'>Learn Bootstrap</a>
+            </div>
+            <div class='rd-col l2 m4'>
+               <h3>JavaScript</h3>
+               <a href='../js/default.html'>Learn JavaScript</a>
+               <a href='../jquery/default.html'>Learn jQuery</a>
+               <a href='../jquerymobile/default.html'>Learn jQueryMobile</a>
+               <a href='../appml/default.html'>Learn AppML</a>
+               <a href='../angular/default.html'>Learn AngularJS</a>
+               <a href='../ajax/default.html'>Learn AJAX</a>
+               <a href='../json/default.html'>Learn JSON</a>
+            </div>
+            <div class='rd-col l2 m4'>
+               <h3>HTML Graphics</h3>
+               <a href='../canvas/default.html'>Learn Canvas</a>
+               <a href='../svg/default.html'>Learn SVG</a>
+               <a href='../icons/default.html'>Learn Icons</a>
+               <a href='../googleapi/default.html'>Learn Google Maps</a>
+               <a href="../games/default.html">Learn HTML Games</a>
+            </div>
+            <div class='rd-col l2 m4'>
+               <h3>Server Side</h3>
+               <a href='../sql/default.html'>Learn SQL</a>
+               <a href='../php/default.html'>Learn PHP</a>
+               <a href='../asp/default.html'>Learn ASP</a>
+               <a href='../aspnet/default.html'>Learn ASP.NET</a>
+            </div>
+            <div class='rd-col l2 m4'>
+               <h3>Web Building</h3>
+               <a href='../website/default.html'>Web Building</a>
+               <a href='../browsers/default.html'>Web Statistics</a>
+               <a href='../cert/default.html'>Web Certificates</a>
+            </div>
+            <div class='rd-col l2 m4'>
+               <h3>XML Tutorials</h3>
+               <a href='../xml/default.html'>Learn XML</a>
+               <a href='../xsl/default.html'>Learn XSLT</a>
+            </div>
+         </div>
+      </div>
+
+      <!-- 5 -->
+      <div id="nav_references_content" style="display:none;">
+         <span onclick='w3_close_nav("references")' class='rd-closebtn rd-xlarge'>&times;</span>
+         <div class='rd-row-padding'>
+            <div class='rd-col l2 m4'>
+               <h3>HTML</h3>
+               <a href='../tags/default.html'>HTML Tag Reference</a>
+               <a href='../tags/ref_eventattributes.html'>HTML Event Reference</a>
+               <a href='../colors/default.html'>HTML Color Reference</a>
+            </div>
+            <div class='rd-col l2 m4'>
+               <h3>CSS</h3>
+               <a href='../cssref/default.html'>CSS Reference</a>
+               <a href='../cssref/css_selectors.html'>CSS Selector Reference</a>
+               <a href='../w3css/w3css_references.html'>W3.CSS Reference</a>
+               <a href='../bootstrap/bootstrap_ref_css_text.html'>Bootstrap Reference</a>
+            </div>
+            <div class='rd-col l2 m4'>
+               <h3>JavaScript</h3>
+               <a href='../jsref/default.html'>JavaScript Reference</a>
+               <a href='../jsref/default.html'>HTML DOM Reference</a>
+               <a href='../jquery/jquery_ref_selectors.html'>jQuery Reference</a>
+               <a href='../jquerymobile/jquerymobile_ref_data.html'>jQuery Mobile Reference</a>
+               <a href='../angular/angular_ref_directives.html'>AngularJS Reference</a>
+               <a href='../googleAPI/google_maps_ref.html'>Google Maps Reference</a>
+            </div>
+            <div class='rd-col l2 m4'>
+               <h3>Server Side</h3>
+               <a href='../php/php_ref_array.asp'>PHP Reference</a>
+               <a href='../sql/sql_quickref.html'>SQL Reference</a>
+               <a href='../asp/asp_ref_response.html'>ASP Reference</a>
+               <a href='../aspnet/webpages_ref_classes.html'>Razor Reference</a>
+               <a href='../aspnet/aspnet_intro.html'>ASP.NET Reference</a>
+            </div>
+            <div class='rd-col l2 m4'>
+               <h3>XML</h3>
+               <a href='../xml/dom_nodetype.html'>XML Reference</a>
+               <a href='../xsl/xsl_w3celementref.html'>XSLT Reference</a>
+               <a href='../xml/schema_elements_ref.html'>XML Schema Reference</a>
+               <a href='../svg/svg_reference.html'>SVG Reference</a>
+            </div>
+            <div class='rd-col l2 m4'>
+               <h3>Charsets</h3>
+               <a href='../charsets/default.html'>HTML Character Sets</a>
+               <a href='../charsets/ref_html_ascii.html'>HTML ASCII</a>
+               <a href='../charsets/ref_html_ansi.html'>HTML ANSI</a>
+               <a href='../charsets/ref_html_ansi.html'>HTML Windows-1252</a>
+               <a href='../charsets/ref_html_8859.html'>HTML ISO-8859-1</a>
+               <a href='../charsets/ref_html_symbols.html'>HTML Symbols</a>
+               <a href='../charsets/ref_html_utf8.html'>HTML UTF-8</a>
+            </div>
+         </div>
+      </div>
+
+      <!-- 6 -->
+      <div id="nav_examples_content" style="display:none;">
+         <span onclick='w3_close_nav("examples")' class='rd-closebtn rd-xlarge'>&times;</span>
+         <div class='rd-row-padding'>
+            <div class='rd-col l3 m6'>
+               <h3>HTML/CSS</h3>
+               <a href='html_examples.html'>HTML Examples</a>
+               <a href='../css/css_examples.html'>CSS Examples</a>
+               <a href='../w3css/w3css_examples.html'>W3.CSS Examples</a>
+            </div>
+            <div class='rd-col l3 m6'>
+               <h3>JavaScript</h3>
+               <a href='../js/js_examples.html' target='_top'>JavaScript Examples</a>
+               <a href='../js/js_dom_examples.html' target='_top'>HTML DOM Examples</a>
+               <a href='../jquery/jquery_examples.html' target='_top'>jQuery Examples</a>
+               <a href='../jquerymobile/jquerymobile_examples.html' target='_top'>jQuery Mobile Examples</a>
+               <a href='../angular/angular_examples.html' target='_top'>AngularJS Examples</a>
+               <a href='../ajax/ajax_examples.html' target='_top'>AJAX Examples</a>
+            </div>
+            <div class='rd-col l3 m6'>
+               <h3>Server Side</h3>
+               <a href='../php/php_examples.html' target='_top'>PHP Examples</a>
+               <a href='../asp/asp_examples.html' target='_top'>ASP Examples</a>
+               <a href='../aspnet/webpages_examples.html' target='_top'>Razor Examples</a>
+               <a href='../aspnet/aspnet_examples.html' target='_top'>.NET Examples</a>
+            </div>
+            <div class='rd-col l3 m6'>
+               <h3>XML</h3>
+               <a href='../xml/xml_examples.html' target='_top'>XML Examples</a>
+               <a href='../xsl/xsl_examples.html' target='_top'>XSL Examples</a>
+               <a href='../xsl/xsl_examples.html' target='_top'>XSLT Examples</a>
+               <a href='../xsl/xpath_examples.html' target='_top'>XPath Examples</a>
+               <a href='../xml/schema_example.html' target='_top'>XML Schema Examples</a>
+               <a href='../svg/svg_examples.html' target='_top'>SVG Examples</a>
+            </div>
+         </div>
+      </div>
+
+      <!-- 7 -->
+      <div id='nav_translate_content' style="display:none">
+         <span onclick='w3_close_nav("translate")' class='rd-closebtn rd-xlarge'>&times;</span>
+         <br><br>Translate w3schools.com:
+         <div id='google_translate_element'></div>
+         <br>
+      </div>
+
+      <!-- 8 -->
+      <div id='nav_search_content' style="display:none">
+         <span onclick='w3_close_nav("search")' class='rd-closebtn rd-xlarge'>&times;</span>
+         <br><br>
+         <div class='searchdiv'>
+            Search w3schools.com:
+            <div id='googleSearch'>
+               <div class='gcse-search'></div>
+            </div>
+         </div>
+         <br>
+      </div>
+
+      <script src="footer.js"></script>
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+   </body>
+   <!-- Mirrored from www.w3schools.com/html/html_basic.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 08:48:19 GMT -->
+</html>

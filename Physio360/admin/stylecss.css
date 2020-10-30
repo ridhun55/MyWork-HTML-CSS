@@ -1,0 +1,21 @@
+.table-bordered .no{
+    width: 10px;
+    text-align: center;
+  }
+  .table-bordered .name{
+    text-align: left;
+  }
+  .table-bordered .age{
+    width: 58px;
+    text-align: center;
+  }
+  .table-bordered .place{
+    max-width: 200px;
+  }
+  .table-bordered .mobile,.table-bordered .place,.table-bordered .date{
+    text-align: center;
+  }
+  .table-bordered .edit,.table-bordered .delete{
+    width: 80px;
+    text-align: center;
+  }
